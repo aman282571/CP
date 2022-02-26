@@ -7,6 +7,7 @@
 5. Stack(PLE,NLE,PGE,NLE)
 6. Running map
 7. For string or array find the position (like where char mismatch and expand in both sides to find all the substring that contain this mismatch character)
+8. Keep in mind that you may have to sort the array and then apply LIS on the one field because the other field is sorted.. (Important)
 
 # Data Structures
 
