@@ -6,15 +6,10 @@ using namespace std;
 class BIT {
  public:
   vector<int> bit;
-  int sz;
-  BIT(int size) {
-    bit.resize(size + 1, 0);
-    sz = size + 1;
-  }
+  BIT(int size) { bit.resize(size + 1, 0); }
   // get the prefix sum till index i
   void getSum(int index) {
     int sum = 0;
-    index++;
     while (index > 0) {
       sum += bit[index];
       index = index - index & (-index);
@@ -23,8 +18,7 @@ class BIT {
   // this will update the value at index i and also in other indices where this
   // value is used
   void update(int index, int val) {
-    index++;
-    while (index <= sz) {
+    while (index < bit.size()) {
       bit[index] += val;
       index = index + index & (-index);
     }

@@ -28,7 +28,7 @@
 2. linked list,DLL, reverse using recursion
 3. Hair and tortoise proof
 4. hash functions theory
-5. (a/b)%m
+5. (a/b)%m =(a%m\*(b^-1)%m)%m=(a%m\*(b^m-2%m)%m)%m
 
 ## website to learn algos
 

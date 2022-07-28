@@ -5,7 +5,9 @@
     "unordered_set": "cpp",
     "vector": "cpp",
     "ostream": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "ratio": "cpp",
+    "iostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled"
 }
