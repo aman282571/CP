@@ -7,20 +7,19 @@ class BIT {
  public:
   vector<int> bit;
   BIT(int size) { bit.resize(size + 1, 0); }
-  // get the prefix sum till index i
-  void getSum(int index) {
+  int getSum(int index) {
     int sum = 0;
     while (index > 0) {
       sum += bit[index];
-      index = index - index & (-index);
+      index = index - (index & (-index));
     }
+    return sum;
   }
-  // this will update the value at index i and also in other indices where this
-  // value is used
+
   void update(int index, int val) {
     while (index < bit.size()) {
       bit[index] += val;
-      index = index + index & (-index);
+      index = index + (index & (-index));
     }
   }
 };
