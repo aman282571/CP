@@ -1,0 +1,5 @@
+Revise these things before interview
+
+1. Postorder and moris traversal
+2. question bank pending questions
+3. 
